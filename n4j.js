@@ -60,7 +60,7 @@ function neo4j2d3(o) {
           // .attr("pointer-events", "all");
 
   // load graph (nodes,links) json from /graph endpoint
-  d3.json("/graph2.json", function(error, obj) {
+  d3.json("graph2.json", function(error, obj) {
 if (error) return;
 	var graph = neo4j2d3(obj.results[0].data);
 		// console.log(graph);
